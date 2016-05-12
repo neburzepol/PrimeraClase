@@ -13,9 +13,6 @@ int main(int argc, const char * argv[]) {
     
     @autoreleasepool {
         
-        // Creamos una nueva intancia de nuestra nueva clase
-        //AGTStarWarsCharacter *anakin = [AGTStarWarsCharacter new];
-        //AGTStarWarsCharacter *anakin = [[AGTStarWarsCharacter alloc]init];
         AGTStarWarsCharacter *anakin = [[AGTStarWarsCharacter alloc]initWithFirsName:@"anakin"
                                                                             lastName:@"skywalker"
                                                                                alias:@"Dark Vader"];
@@ -27,11 +24,6 @@ int main(int argc, const char * argv[]) {
                                                                                   alias:@"Maestro"];
         
         AGTStarWarsCharacter *r2d2 = [AGTStarWarsCharacter starWarsCharacterWithWithAlias:@"R2-D2"];
-        
-        // Asignar Valores a las propiedades
-        /*[anakin setFirstName:@"Anakin"];
-        [anakin setLastName:@"Skywalker"];
-        [anakin setAlias:@"Dark Vader"];*/
         
         //NSLog
         NSLog(@"Mi nombre es %@ %@ y soy mas conocido como: %@",[anakin firstName],[anakin lastName],[anakin alias]);

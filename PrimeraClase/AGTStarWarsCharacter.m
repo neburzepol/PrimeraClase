@@ -23,29 +23,19 @@
     return [[self alloc]initWithAlias:alias];
 }
 
-/*
- Implementacion de un inicializador
- */
+
 -(id)initWithFirsName: (NSString*)firstName
              lastName: (NSString*)lastName
                 alias: (NSString*)alias{
     
-    /*Super apunta a nuestra superclase, nosotros desendemos de NSObject y quien recibida el mensaje es
-     NSObject, le pasaremos a la super clase el inicializador designado
-     */
-    
-    /*Self es como en java this, apunta a mi mismo*/
-    
     self = [super init];
     
-    if (self != nil) {//self=[super init] forma compacta
-        /*guardamos de nuestras propiedades los valores que nos han dado*/
-        [self setFirstName:firstName];
-        self.lastName = lastName;
-        _alias = alias;//acceder a la variable de instancia siempre (recomendable en iniciadores)
+    if (self != nil) {
+        _firstName = firstName;
+        _lastName = lastName;
+        _alias = alias;
     }
     
-    /*Devolvemos un puntero*/
     return self;
 }
 
