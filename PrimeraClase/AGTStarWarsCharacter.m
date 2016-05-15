@@ -28,9 +28,9 @@
              lastName: (NSString*)lastName
                 alias: (NSString*)alias{
     
-    self = [super init];
     
-    if (self != nil) {
+    
+    if (self = [super init]) {
         _firstName = firstName;
         _lastName = lastName;
         _alias = alias;
